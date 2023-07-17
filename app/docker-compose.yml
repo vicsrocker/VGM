@@ -12,6 +12,8 @@ services:
       MYSQL_USER: root
       MYSQL_PASSWORD: secret
       MYSQL_DB: todos
+      node:18-alpine \
+      sh -c "yarn install && yarn run dev"
   mysql:
     image: mysql:8.0
     volumes:
