@@ -7,3 +7,8 @@ command: sh -c "yarn install && yarn run dev"
 working_dir: /app
     volumes:
       - ./:/app
+environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: todos
